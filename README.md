@@ -1,1 +1,1 @@
-# fincalculator
+# Financial Calculator
