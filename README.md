@@ -44,12 +44,12 @@ Now we can run the program with below command:
 1. The user chooses which calculation they want to do. 
 
 -  The first output that the user sees when the program runs should look like this :
-------------------------------------------------------------------------------------------------
+_______________________________________________________________________________________________
  Choose either 'investment' or 'bond' from the menu below to proceed:
  
  investment    -   to calculate the amount of interest you'll earn on your investment
  bond          -   to calculate the amount you'll have to pay on a home loan
-------------------------------------------------------------------------------------------------
+_______________________________________________________________________________________________
 
 -  If the user doesn't type in a valid input, the program shows an appropriate error message.
 
