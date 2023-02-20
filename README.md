@@ -1,24 +1,12 @@
-# Financial Calculator
-# Bookstore Management Program
+# Financial Calculator Program
 
-This program helps the clerk in the bookstore to keep track of the books in the store.
-
-## Description
-
-The management program can be used by a bookstore clerk. The program allows the clerk to:
-* add new books to the database
-* update book information
-* delete books from the database
-* search the database to find a specific book.
+This program allows the user to access two different financial calculators: 
+an investment calculator and a home loan repayment calculator.
 
 ## Table of Content
 1. Installation
 2. Executing Program
 3. Authors
-
-### Dependencies
-
-* This program uses the tabulate function and sqlite3.
 
 ### Installation
 
@@ -26,58 +14,72 @@ The management program can be used by a bookstore clerk. The program allows the 
 
 ##### 1.1   Dependencies
 
-The virtual environment requires the installation of python & tabulate.
+The virtual environment requires the installation of python and importing the math module.
 
 ##### 1.2   Copying Files
 
 Go to the directory or folder where you want to install the project and enter the following command in the command line:
 ```
->git clone https://github.com/riaandeventer/ebook_store
+>git clone https://github.com/riaandeventer/fin_calculators
 ```
 If you are asked for a login then it should be because you might have made a typing error with the link.
 
 ##### 1.3   Run Program
 
-If your files copied successfully, there should be a folder ebook_store when you (for windows) enter the >dir command.
+If your files copied successfully, there should be a folder fin_calculators when you (for windows) enter the >dir command.
 Go to this directory with below command.
 ```
->cd ebook_store
+>cd fin_calculators
 ```
 Now we can run the program with below command:
 ```
->python ebookstore.py
+>python finance_calculators.py
 ```
-
-* The file InventoryReset.txt contains the book data that you want to load initially. Update the information detail and note the format.
-* The program will read in this file through a menu option and the database with table will be created or updated if it already exists.
-* After initial load, you will notice the database file ebookstore_db in the folder.
-* Database is called ebookstore and a table called books. The table has the following structure:
-
-|Id     | Title                                     | Author             | Qty  |
-|-------|-------------------------------------------|--------------------|------|
-|3001   | A Tale of Two Cities                      | Charles Dickens    | 30   |
-|3002   | Harry Potter and the Philosopher's Stone  | J.K. Rowling       | 40   |
-|3003   | The Lion, the Witch and the Wardrobe      | C. S. Lewis        | 25   |
-|3004   | The Lord of the Rings                     | J.R.R Tolkien      | 37   |
-|3005   | Alice in Wonderland                       | Lewis Carroll      | 12   |
 
 ### Executing Program
 
 * Run the program
 * You will see the menu.
 
-![Main Menu](/images/1.jpg)
+1. The user chooses which calculation they want to do. 
 
-* Menu Option 6: Start here to load the database or reset it in the future.
-* Menu Option 1: This will straight display all the books in the inventory.
-* Menu Option 2: This will request an identification number for the book, then book title, author and quantity you have available.
-* Menu Option 3: You need the id of a book to update the title, author or quantity available. Use Menu Option 1 to get id number.
-* Menu Option 4: Remove a book from you inventory by providing the id of the book. Use Menu Option 1 to get the id number.
-* Menu Option 5: Search for books with below menu.
+-  The first output that the user sees when the program runs should look like this :
+------------------------------------------------------------------------------------------------
+ Choose either 'investment' or 'bond' from the menu below to proceed:
+ 
+ investment    -   to calculate the amount of interest you'll earn on your investment
+ bond          -   to calculate the amount you'll have to pay on a home loan
+------------------------------------------------------------------------------------------------
 
-![Main Menu](/images/2.jpg)
+-  If the user doesn't type in a valid input, the program shows an appropriate error message.
 
-* Menu Option 5: With submenu option 4 you can search for books with stock less than a certain number.
+2. If the user selects 'investment', the user must input:
+   * The amount of money that they are depositing.
+   * The interest rate (as a percentage). Only the number of the interest rate should be entered, e.g. The user should enter 8 and not 8%.
+   * The number of years they plan on investing.
+   * Does the user want “simple” or “compound” interest, 
+     -  Depending on whether or not they typed 'simple' or 'compound', the program outputs the appropriate amount 
+        that they will get back after the given period, at the specified interest rate. 
+     -  Look below for the formula used:
+        *  The total amount when simple interest is applied is calculated as follows: A = P(1 + r * t)
+        *  The total amount when compound interest is applied is calculated as follows: A = P(1 + r) ^ t
+        *  In the formulae above:
+           > ‘r’ is the interest entered above divided by 100, e.g. if 8% is entered, then r is 0.08.
+           > ‘P’ is the amount that the user deposits.
+           > ‘t’ is the number of years that the money is being invested.
+           > ‘A’ is the total amount once the interest has been applied.
+
+3. If the user selects ‘bond’, the user must input:
+   * The present value of the house. e.g. 100000
+   * The interest rate. e.g. 7
+   * The number of __months__ they plan to take to repay the bond. e.g. 120
+     -  Calculate how much money the user will have to repay each month and output the answer.
+     -  Bond repayment formula:
+        *  The amount that a person will have to repay on a home loan each month is calculated as follows: repayment = x = (i.P)/(1 - (1+i)^(-n))
+        *  In the formula above:
+           > ‘P’ is the present value of the house.
+           > ‘i’ is the monthly interest rate, calculated by dividing the annual interest rate by 12.
+           > ‘n’ is the number of months over which the bond will be repaid.
 
 ## Authors
 
