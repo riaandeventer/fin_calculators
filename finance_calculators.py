@@ -1,8 +1,7 @@
-# Software Engineer: RIAAN VAN DEVENTER (SN: RV22110005417)
-# This was programmed for the Software Engineering BOOTCAMP
+# Software Engineer: RIAAN DEVENTER
 # Written on 11 December 2022
 
-# ************** L1T11 - TASK1 ASSIGNMENT **************   
+#------------------------------------------------------------------------------------------------  
 # Assume that you have been approached by a small financial company and asked to create a program 
 # that allows the user to access two different financial calculators: 
 # an investment calculator and a home loan repayment calculator.
