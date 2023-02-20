@@ -48,6 +48,7 @@ ________________________________________________________________________________
  Choose either 'investment' or 'bond' from the menu below to proceed:
  
  investment    -   to calculate the amount of interest you'll earn on your investment
+ 
  bond          -   to calculate the amount you'll have to pay on a home loan
 _______________________________________________________________________________________________
 
