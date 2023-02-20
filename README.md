@@ -41,7 +41,7 @@ Now we can run the program with below command:
 * Run the program
 * You will see the menu.
 
-1. The user chooses which calculation they want to do. 
+###### 1. The user chooses which calculation they want to do. 
 
 -  The first output that the user sees when the program runs should look like this :
 _______________________________________________________________________________________________
@@ -54,7 +54,7 @@ ________________________________________________________________________________
 
 -  If the user doesn't type in a valid input, the program shows an appropriate error message.
 
-2. If the user selects 'investment', the user must input:
+###### 2. If the user selects 'investment', the user must input:
    * The amount of money that they are depositing.
    * The interest rate (as a percentage). Only the number of the interest rate should be entered, e.g. The user should enter 8 and not 8%.
    * The number of years they plan on investing.
@@ -70,7 +70,7 @@ ________________________________________________________________________________
            > ‘t’ is the number of years that the money is being invested.
            > ‘A’ is the total amount once the interest has been applied.
 
-3. If the user selects ‘bond’, the user must input:
+###### 3. If the user selects ‘bond’, the user must input:
    * The present value of the house. e.g. 100000
    * The interest rate. e.g. 7
    * The number of __months__ they plan to take to repay the bond. e.g. 120
